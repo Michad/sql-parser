@@ -4,7 +4,7 @@
   "description": "Parse SQL (select) statements into abstract syntax tree (AST) and convert ASTs back to SQL.",
   "main": "index.js",
   "scripts": {
-    "prepare": "git config --local core.hooksPath .githooks",
+    "prepare": "",
     "build": "mkdir -p dist && peggy -o dist/parser.js sql.pegjs",
     "pretest": "npm run build",
     "test": "node --test test/**/*.spec.js",
